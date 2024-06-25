@@ -1,0 +1,73 @@
+/* Navbar.css */
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, padding 0.3s;
+  }
+  
+  .navbar-scrolled {
+    padding: 5px 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+  }
+  
+  .hamburger-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .hamburger-icon {
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+  }
+  
+  .menu {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .menu a:hover {
+    background-color: #f0f0f0;
+  }
+  
