@@ -1,0 +1,37 @@
+
+.nav-link {
+  display: inline-block;
+  position: relative;
+  color:white;
+  margin-right: 10px;
+}
+
+.nav-link:hover  {
+  color:	rgb(17, 169, 255);
+}
+
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 1px;
+  left: 2px;
+  background-color:	rgb(17, 169, 255);
+  transform-origin: bottom center;
+  transition: transform 0.35s ease-out;
+}
+
+.nav-link:hover::after {
+  height: 1.5px;
+  transform: scaleX(1);
+  transform-origin: bottom center;
+} 
+
+.navbar{
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.5); 
+  backdrop-filter: blur(0px);
+}
